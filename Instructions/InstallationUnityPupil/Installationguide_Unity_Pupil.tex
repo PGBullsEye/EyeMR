@@ -1,0 +1,120 @@
+\documentclass[12pt,a4paper,twoside,openright]{scrreprt}
+
+% Sprachpakete
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+% Zum plattformunabhängigen Einfügen anderer Tex-Dateien
+% Hinweise zur Benutzung weiter unten
+\usepackage{subfiles}
+% Zum Anpassen der Seitenränder
+\usepackage{geometry}
+% Einrücken vermeiden
+\usepackage{parskip}
+% Zum Einbinden von PDF-Seiten
+\usepackage{pdfpages}
+% Zum Einbinden von Grafiken
+\usepackage{graphicx}		
+% Um Zellen in Tabellen zusammenzufassen
+\usepackage{multirow}
+% Für farbige Schriften und Tabellen
+\usepackage{xcolor}
+\usepackage{colortbl}
+% Package für zusätzliche mathematische Symbole
+\usepackage{amssymb}
+\usepackage{units} 
+\usepackage{hyperref}
+% Package zum erstellen von ToDo-Anmerkungen
+% Befehl: \todo{Text} oder \todo[inline]{text} für Anmerkungen am Rand oder in-line
+%					\missingfigure{text} Platzhalter für geplante Grafiken/Tabellen mit Beschreibung
+% Beim fertigen Dokument muss dieser Package mittels \usepackage[disable]{todonotes} deaktiviert werden,
+% um alle vorhandenen ToDos als auch die ToDo-Liste ausgeblendet werden.
+\usepackage[disable]{todonotes} 			
+
+% Nummerierung der Grafiken nach Kapitel
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+% Zum Einbinden von Code-Ausschnitte
+% Mittels \lstinputlisting[language=C, firstline=7, lastline=11]{quellcode-datei.c} können 
+% die Zeilen 7 bis 11 der quellcode-datei.c mit der Syntax-Highlighting für die Sprache C eingefügt werden.
+% Das Package unterstützt eine Vielzahl an Programmiersprachen,
+% und am Besten den Code in einer figure-Umgebung setzen
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\small, basicstyle=\small, numbersep=3mm, framexleftmargin=8mm, framexrightmargin=0cm, language=C,  frame=single, breaklines=true}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Titleseite V1
+\begin{titlepage}
+
+	\begin{center}
+	\includegraphics[scale=0.3]{LogoUniOL.png}\\[2.2cm]
+	\Huge{\textbf{Project Group Bull's Eye}}\\[0.4cm]
+	\huge{\textbf{Installationguide of Unity and Pupil Capture}}\\[0.5cm]
+	\Large{2016~-~2017}\\[3ex]
+	\large{
+		Daniela Betzl\\
+		Tim Lukas Cofala\\
+		Aljoscha Niazi-Shahabi\\
+		Stefan Niewerth\\
+		Henrik Reichmann\\
+		Rieke von Bargen\\
+	}
+	\vspace{1.5cm}
+	\large{
+				Prof. Dr. Susanne Boll-Westermann\\
+				Advisors: M.Sc. Tim Stratmann, M.Sc. Uwe Gr\"unefeld\\
+				Organization: M.Sc. Marion Koelle \\
+				Last revision: 26.09.2017\\
+				Version: 2.0\\
+				Carl von Ossietzky University of Oldenburg\\
+				\textsc{Faculty II } School of Computing Science, Business Administration, Economics, and Law 
+			}
+	\end{center}
+\end{titlepage}
+
+% Diese Liste listet alle eingefügten ToDo-Anmerkungen auf, sodass man ein Überblick über allen ToDos im ganzen Dokument hat
+\listoftodos
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract
+% Auskommentieren, falls kein Abstrakt notwendig ist
+%\subfile{chapter/abtract.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Verzeichnisse
+\pagenumbering{roman}
+\tableofcontents \clearpage
+%\listoffigures \clearpage
+%\listoftables \clearpage
+\pagenumbering{arabic}
+\clearpage
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% die Kapitel des Dokuments
+% Die einzelne Kapitel können hier mittels dem Befehl \subfile{chapter/unterordner/textdatei.tex} eingefügt werden,
+% wobei chapter/unterordner/ der relative Pfad zur Datei ist.
+% Das Package subfiles sorgt dafür, dass die einzlenen Kapitel automatisch mit dieser Datei verknüpft werden, sodass keine 
+% Konfiguration des LaTeX-Editors notwendig ist. Dies ist praktisch, da die Konfiguration im Editor manuell erledigt werden muss,
+% und von Editor zu Editor sich unterscheiden.
+% Zudem ermöglicht subfiles die einzelnen Kapitel direkt zu kompilieren, ohne masterdoc.tex sowie die anderen zugehörigen Tex-Dateien
+% kompilieren zu müssen. Dadurch geht das kompilieren schneller, wobei nachdem man fertig ist masterdoc ebenfalls kompilieren sollte, 
+% sodass das Kapitel bzw. die Änderungen am Kapitel im Hauptdokument ebenfalls zu sehen ist.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kapitel 1
+%\addchap{Vorwort}
+%Dieses Dokument dient als Zusammenfassung aller Sprints mit den jeweiligen Zeiträumen, Aufgaben, Entscheidungen und Besonderheiten sowie einer kleinen Überblick der jeweiligen Sprints. Zudem fungiert es als Nachschlagewerk.
+\subfile{chapter/unity/unity.tex}
+\subfile{chapter/pupil/pupil.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis
+% An dieser Stelle wird das Literaturverzeichnis eingefügt, die Literatur sollte dabei in einer BibTex-Datei vorhanden sein.
+% Hierfür die Zeilen auskommentieren und in der geschweiften Klammer des bibliography-Befehls der Name der BibTex-Datei angeben.
+%\bibliography{bibliography}
+%\bibliographystyle{lnig}
+
+\end{document}

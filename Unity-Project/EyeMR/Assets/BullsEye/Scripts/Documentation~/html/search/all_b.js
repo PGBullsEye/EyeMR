@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['sendfromrendertexture',['SendFromRenderTexture',['../class_bulls_eye_scripts_1_1_streaming_1_1_send_from_render_texture.html',1,'BullsEyeScripts.Streaming.SendFromRenderTexture'],['../class_bulls_eye_scripts_1_1_streaming_1_1_send_from_render_texture.html#afc636e6a4e1d48fc86f9c149d6ef73ba',1,'BullsEyeScripts.Streaming.SendFromRenderTexture.SendFromRenderTexture()']]],
+  ['sphere',['Sphere',['../class_pupil_1_1_sphere.html',1,'Pupil']]],
+  ['start',['Start',['../class_renderplane_setup.html#aef82175ffeec85b1da072bccb5c53f85',1,'RenderplaneSetup.Start()'],['../class_virtual_object_layer.html#a03da9fff2c314f6760684ac95fcf8413',1,'VirtualObjectLayer.Start()'],['../class_receiving_1_1_pupil_listener.html#a5676d95dcf1bfeddb7ad5f63b6ed4c5a',1,'Receiving.PupilListener.Start()'],['../class_fixation_detection_service.html#a3402d8322cd16d436adb3f111d4aedfa',1,'FixationDetectionService.Start()'],['../class_gesture_detection_service.html#a68f6664d5f73f1806f7776493a7c9b97',1,'GestureDetectionService.Start()'],['../class_bulls_eye_scripts_1_1_streaming_1_1_send_from_render_texture.html#aa4c78b9002d8af22e6894f2f7a7cc55a',1,'BullsEyeScripts.Streaming.SendFromRenderTexture.Start()']]],
+  ['subscribe',['Subscribe',['../class_fixation_detection_service.html#a6f521d1ecae11a4f9b611f917153d81b',1,'FixationDetectionService.Subscribe()'],['../class_gesture_detection_service.html#ae2b70b093253d56a63621831ed79b783',1,'GestureDetectionService.Subscribe()']]]
+];

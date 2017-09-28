@@ -1,0 +1,72 @@
+\documentclass[../../Instructions_Framework]{subfiles}
+% Hier müssen keine Packages geladen werden, es werden automatisch die von masterdoc geladen,
+% sowie die Konfigurationen.
+% Bei includegraphics nur Bildname (Bsp: Bild.png) eingeben, da er in den angegebenen Pfade die Bilder sucht
+\graphicspath{{img/}{img/}}
+\begin{document}
+\chapter{Usage of techniques or scenes}
+\label{usage}
+In this chapter you can see all example interaction techniques. The following list will give you an detailed overwiew.\\
+The example techniques are found in \textbf{Assets/BullsEye/Examples/Scripts} folder, the example scenes in the \textbf{Assets/BullsEye/Examples/Scenes} folder.
+\section{Example interaction techniques}
+\begin{itemize}
+	\item Technique 01: FixationSizeChange
+	\begin{itemize}
+		\item A fixation interaction technique that alternates the size of the object between a given minimum size and a given maximum size while the object is being fixated.
+	\end{itemize}
+	\item Technique 02: FixationColor
+	\begin{itemize}
+		\item A fixation interaction technique that changes the object's color to a given color while it is being fixated.
+	\end{itemize}
+	\item Technique 03: FixationColorChange
+	\begin{itemize}
+		\item A fixation interaction technique that smoothly changes the color from a given start color to a given target color while the object is being fixated.
+	\end{itemize}
+		\item Technique 04: FixationDeletion
+	\begin{itemize}
+		\item A fixation interaction technique that deletes the object as soon as it is being fixated.
+	\end{itemize}
+		\item Technique 05: AreaFixation
+	\begin{itemize}
+		\item An area-based fixation interaction technique that changes the object's color while there is a fixation in the right hand side of the screen.
+	\end{itemize}
+		\item Technique 06: GestureSpawnObject
+	\begin{itemize}
+		\item A gesture interaction technique that spawns a sphere in the user's field of view every time a 'C' gesture is drawn with saccades.
+	\end{itemize}
+		\item Technique 07: PursuitSizeChange
+	\begin{itemize}
+		\item A pursuit interaction technique that alternates the size of the object between a given minimum size and a given maximum size while the object is being followed by the user's gaze.
+	\end{itemize}
+		\item Technique 08: PursuitColorChange
+	\begin{itemize}
+		\item A pursuit interaction technique that smoothly changes the object's color from a given start color to a given target color while it is being followed by the user's gaze.
+	\end{itemize}
+		\item Technique 09: FixationPickupDrop
+	\begin{itemize}
+		\item A fixation interaction technique that lets the user pickup the object with their gaze, move it around for a given time and drop it again.
+	\end{itemize}
+\end{itemize} 
+
+\section{Example scenes}
+
+\begin{itemize}
+	\item Scene 01: AR Search Game
+	\begin{itemize}
+		\item An AR scene in which the user has to search a floating sphere around them. After finding that sphere and fixating it it moves to a random position around the user.
+	\end{itemize}
+	\item Scene 02: Towers of Hanoi
+	\begin{itemize}
+		\item A VR scene in which the user can play the game 'Towers of Hanoi' using fixations to select the stack from which he wants to move a disk. The movement between the different stacks is implemented via gestures which are shown inside the scene.
+	\end{itemize}
+	\item Scene 03: Pursuit Balloon
+	\begin{itemize}
+		\item An AR scene where the user has to follow a balloon with their gaze. If the user does this for a few seconds, the balloon will burst into pieces. During this period the ballon's line symbolizes how close the ballon is to bursting. The shorter the line is, the closer the ballon is to bursting. After a short time the balloon reappears somewhere around the user and can be followed again.
+	\end{itemize}
+	\item Scene 04: Balloons
+	\begin{itemize}
+		\item An AR scene using Vuforia. The user has to look at a marker and make a gesture to start a game were they have to pop ballons using fixations. There are ballons which mustn't be popped because the user loses a life if should they destroy them. They also lose a life should the other balloons fly to far away. The game ends if the user ha no more lifes left. Additionally the user has access to a menu using a second marker to stop or restart the game or close the app entirely.
+	\end{itemize}
+\end{itemize}
+
+\end{document}

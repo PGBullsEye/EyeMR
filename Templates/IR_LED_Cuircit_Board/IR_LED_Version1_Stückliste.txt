@@ -1,0 +1,29 @@
+Partlist
+
+Exported from IR_LED.sch at 14.07.2017 20:15
+
+EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device      Package       Library      Sheet
+
+LED1     20° 850nm      LED5MM      LED5MM        led          1
+LED2     20° 850nm      LED5MM      LED5MM        led          1
+LED3     20° 850nm      LED5MM      LED5MM        led          1
+LED4     20° 850nm      LED5MM      LED5MM        led          1
+LED5     20° 850nm      LED5MM      LED5MM        led          1
+LED6     20° 850nm      LED5MM      LED5MM        led          1
+LED7     20° 850nm      LED5MM      LED5MM        led          1
+LED8     20° 850nm      LED5MM      LED5MM        led          1
+LED9     20° 850nm      LED5MM      LED5MM        led          1
+LED10    20° 850nm      LED5MM      LED5MM        led          1
+LED11    20° 850nm      LED5MM      LED5MM        led          1
+LED12    20° 850nm      LED5MM      LED5MM        led          1
+R1       13             R-EU_0204/7 0204/7        rcl          1
+R2       13             R-EU_0204/7 0204/7        rcl          1
+U1                      USB""       USB-MICRO-SMD MicroUSB_mod 1
+U2                      USB""       USB-MICRO-SMD MicroUSB_mod 1
+
+Micro-USB: Einbaubuchse Micro USB Typ B 2.0 Buchse, Einbau horizontal USB 1 Port FCI
+https://www.conrad.de/de/einbaubuchse-micro-usb-typ-b-20-buchse-einbau-horizontal-usb-1-port-fci-inhalt-1-st-1401794.html?sc.ref=Category%20Product%20List 
